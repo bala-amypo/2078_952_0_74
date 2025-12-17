@@ -29,7 +29,13 @@ public class Student{
     public Long getDob(){
         return dob;
     }
-    public void setDo(Long id){
-        this.id=id;
+    public void setDob(LocalDate dob){
+        this.dob=dob;
+    }
+    public Long getCgpa(){
+        return cgpa;
+    }
+    public void setCgpa(float cgpa){
+        this.cgpa=cgpa;
     }
 }

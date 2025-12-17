@@ -2,8 +2,8 @@ package com.example.demo.entity;
 
 import java.time.LocalDate;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.
+import jakarta.persistence.*;
+import jakarta.persistence.id;
 @Entity
 public class Student{
     private Long id;

@@ -10,6 +10,26 @@ public class Student{
     private float cgpa;
     public Long getId(){
         return id;
-
+    }
+    public void setId(Long id){
+        this.id=id;
+    }
+    public Long getName(){
+        return name;
+    }
+    public void setName(String name){
+        this.name=name;
+    }
+    public Long getDept(){
+        return dept;
+    }
+    public void setDept(String dept){
+        this.dept=dept;
+    }
+    public Long getDob(){
+        return dob;
+    }
+    public void setDo(Long id){
+        this.id=id;
     }
 }

@@ -17,18 +17,18 @@ public class StudentServiceImpl implements StudentService{
             return stdrepo.save(st);
     }
     @Override
-    public List<student>getAllStudent(){
+    public List<Student>getAllStudent(){
         return stdrepo.findAll();
     }
     @Override
-    public Optional <student>getById(Long id){
+    public Optional <Student>getById(Long id){
         return stdrepo.findById(id);
     }
     @Override
     public string updatedata(Long id,Student st){
         boolean status=stdrepo.existById(id);
         if(status){
-            
+
         }
     }
 }

@@ -1,9 +1,10 @@
 package com.example.demo.Service;
-import java.util.*;
 import com.example.demo.entity.Student;
+import java.util.*;
 public interface StudentService{
     Student poststudent(Student st);
-    List<Student> getAllStudents();
-    Optional<Student>getbyId(long id);
-    string updateData(Long)
+    List<Student> getallstudents();
+    Optional<Student> getById(Long id);
+    String updateData(Long id,Student st);
+    String deleteData(Long id);
 }

@@ -9,7 +9,7 @@ import com.example.demo.entity.Student;
 import com.example.demo.repository.StudentRepository;
 
 @Service
-public Class StudentServiceImpl implements StudentService{
+public class StudentServiceImpl implements StudentService{
     @Autowired
     StudentRepository stdrepo;
     @Override
@@ -17,7 +17,7 @@ public Class StudentServiceImpl implements StudentService{
             return stdrepo.save(st);
     }
     @Override
-    public List<Student>getAllStudent(){
+    public List<Student> getallstudents(){
         return stdrepo.findAll();
     }
     @Override
@@ -25,7 +25,7 @@ public Class StudentServiceImpl implements StudentService{
         return stdrepo.findById(id);
     }
     @Override
-    public String updatedata(Long id,Student st){
+    public String updateData(Long id,Student st){
         boolean status=stdrepo.existById(id);
         if(status){
             st.setId(id);

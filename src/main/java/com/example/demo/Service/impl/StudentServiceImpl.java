@@ -40,7 +40,8 @@ public class StudentServiceImpl implements StudentService{
     public String deleteData(Long id){
         boolean status=stdrepo.existsById(id);
         if(status){
-            stdrepo
+            stdrepo.deleteById(id);
+            return "Student Delete successfully";
         }
     }
 }

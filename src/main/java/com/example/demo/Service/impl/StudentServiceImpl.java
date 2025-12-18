@@ -1,4 +1,6 @@
 package com.example.demo.Service.impl;
+
+import org.springframework.beans.factory.annotation.Auto
 import org.springframework.stereotype.Service;
 import com.example.demo.Service.StudentService;
 import com.example.demo.entity.Student;
@@ -17,5 +19,7 @@ public class StudentServiceImpl implements StudentService{
         return stdrepo.findAll();
     }
     @Override
-    public
+    public Optional <student>getById(Long id){
+        return stdrepo.findById(id);
+    }
 }

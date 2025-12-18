@@ -9,7 +9,7 @@ import com.example.demo.entity.Student;
 import com.example.demo.repository.StudentRepository;
 
 @Service
-public class StudentServiceImpl implements StudentService{
+public Class StudentServiceImpl implements StudentService{
     @Autowired
     StudentRepository stdrepo;
     @Override
@@ -17,15 +17,15 @@ public class StudentServiceImpl implements StudentService{
             return stdrepo.save(st);
     }
     @Override
-    public List<Student>getAllStudent(){
+    public List <Student>getAllStudent(){
         return stdrepo.findAll();
     }
     @Override
-    public Optional<Student> getById(Long id){
+    public Optional <Student> getById(Long id){
         return stdrepo.findById(id);
     }
     @Override
-    public string updatedata(Long id,Student st){
+    public String updatedata(Long id,Student st){
         boolean status=stdrepo.existById(id);
         if(status){
             st.setId(id);
@@ -44,7 +44,7 @@ public class StudentServiceImpl implements StudentService{
             return "Student Delete successfully";
         }
         else{
-            return "Student with ID"+id+" not found"
+            return "Student with ID"+id+" not found";
         }
     }
 }
